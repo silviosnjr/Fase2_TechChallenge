@@ -40,7 +40,7 @@ def calculate_distance(point1: Tuple[float, float], point2: Tuple[float, float])
     # existe uma maneira mais eficiente utilizando matriz de distância que não utiliza número ao quadrado
     return math.sqrt((point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2)
 
-# calculando p fotmess: chama distância += distância
+# calculando o fitness: chama distância += distância
 def calculate_fitness(path: List[Tuple[float, float]]) -> float:
     """
     Calculate the fitness of a given path based on the total Euclidean distance.
